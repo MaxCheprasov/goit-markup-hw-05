@@ -41,7 +41,7 @@ img {
   display: block;
 }
 
-/*=============================header-start=============================*/
+/* Header section */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -117,7 +117,7 @@ img {
   text-decoration: underline;
 }
 
-/*header-address-start*/
+/* Header Address */
 .contacts {
   font-style: normal;
   max-width: fit-content;
@@ -152,7 +152,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*header-logo-start*/
+/* Header logo */
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -177,7 +178,8 @@ img {
   color: #2e2f42;
 }
 
-/*=============================section-1-start=============================*/
+/* Section 1 */
+
 .section-one {
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -231,7 +233,7 @@ img {
   background-color: #404bbf;
 }
 
-/*=============================section-2-start=============================*/
+/* Section 2 */
 
 .section-two .container {
   flex-direction: column;
@@ -286,7 +288,8 @@ img {
   padding: 120px 0;
 }
 
-/*=============================section-3-start=============================*/
+/* Section 3 */
+
 .section-three .container {
   display: flex;
   flex-direction: column;
@@ -395,7 +398,8 @@ img {
   display: flex;
 }
 
-/*=============================section-4-start=============================*/
+/* Section 4 */
+
 .section-four .container {
   display: flex;
   flex-direction: column;
@@ -482,7 +486,7 @@ img {
   column-gap: 24px;
 }
 
-/*=============================footer-start=============================*/
+/* Footer */
 
 .footer {
   background-color: #2e2f42;
@@ -578,8 +582,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*==============footer-subscribe-start================*/
-
 .footer-subscribe {
   display: inline-block;
   margin-left: 80px;
@@ -658,7 +660,7 @@ img {
   align-items: center;
 }
 
-/*========================modal-windows-start=========================*/
+/* Modal */
 
 .modal-overlay {
   position: fixed;
@@ -704,7 +706,8 @@ img {
   transform: translate(-50%, -100%);
 }
 
-/*============close-button-start=============*/
+/* Close btn */
+
 .close-icon {
   position: absolute;
   top: 24px;
@@ -736,7 +739,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*============modal-title-start=============*/
 .modal-title {
   color: #2e2f42;
   font-family: Roboto;
@@ -747,7 +749,7 @@ img {
   text-align: center;
   margin-bottom: 16px;
 }
-/*============modal-form-start=============*/
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -778,15 +780,7 @@ img {
 }
 
 .input-wrapper {
-  position: relative; /*важливеі властивість і значення*/
-  /*display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  width: 360px;
-  height: 40px;
-  border-radius: 4px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
+  position: relative; 
 }
 
 .input-container {
@@ -799,27 +793,20 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*============icon-for-modal-form-start=============*/
+
 .modal-input-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /*display: flex;
-  justify-items: center;
-  align-items: center;
-  margin-right: 4px;*/
   fill: #2e2f42;
 }
 
 .input-wrapper svg {
   cursor: pointer;
-  /*fill: #2e2f42;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
-/*.input-container:hover,*/
 .input-container:focus {
   border: 1px solid #4d5ae5;
 }
@@ -828,7 +815,6 @@ img {
   fill: #4d5ae5;
 }
 
-/*============comment-start=============*/
 .modal-form-inputs-comment {
   margin-bottom: 16px;
   display: flex;
@@ -864,22 +850,17 @@ img {
   border-color: #4d5ae5;
 }
 
-/*=================checkbox-start=================*/
 .checkbox-field {
   display: inline-flex;
   margin-bottom: 24px;
-  /*display: inline-flex;
-  align-items: center;*/
 }
 
-/*===defolt-checkbox===*/
 .defolt-checkbox {
   margin-right: 8px;
   width: 16px;
   height: 16px;
 }
 
-/*===text-in-label-checkbox===*/
 .label-checkbox {
   font-size: 12px;
   line-height: 1.17;
@@ -913,22 +894,6 @@ img {
   border: none;
 }
 
-/*===visually-hidden-examole===
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(-50%);
-  margin: -1px;
-}*/
-
-/*=================modal-button-bottom=================*/
-
 .modal-button {
   display: block;
   min-width: 169px;
@@ -954,5 +919,3 @@ img {
 .modal-button:focus {
   background-color: #404bbf;
 }
-
-/*========================модальне-вікно-кінець=========================*/
