@@ -12,52 +12,36 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <style>
-      h1,
-      h2,
-      h3,
-      p {
-        margin: 0;
-      }
-      ul {
-        margin: 0;
-        padding-left: 0;
-      }
-      img {
-        display: block;
-        max-width: 100%;
-      }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <header class="hedr">
-      <div class="container">
-        <nav class="nav-container">
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="header-nav">
           <a class="logo" href="./index.html">Web<span class="logo-part-header">Studio</span></a>
-          <ul class="menu-links">
-            <li class="cur-link-active">
-              <a class="current link" href="./index.html">Studio</a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="current nav-link" href="./index.html">Studio</a>
             </li>
-            <li>
-              <a class="link" href="">Portfolio</a>
+            <li class="nav-item">
+              <a class="nav-link" href="">Portfolio</a>
             </li>
-            <li>
-              <a class="link" href="">Contacts</a>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <address class="address">
-          <ul class="ad-links">
-            <li>
-              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
-              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -66,9 +50,9 @@
 
     <main>
       <section class="section-one">
-        <div class="container">
-          <h1 class="hdr-one">Effective Solutions for Your Business</h1>
-          <button type="button" class="button">Order Service</button>
+        <div class="container container-section-one">
+          <h1 class="header-section-one">Effective Solutions for Your Business</h1>
+          <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -366,47 +350,130 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <div class="footer-text-and-logo">
           <a class="logo-footer" href="./index.html">Web<span class="logo-part-footer">Studio</span></a>
           <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
 
-        <div class="social-media">
-          <p class="hdr-four">Social media</p>
+        <div class="social-media-footer">
+          <p class="header-for-footer-socials">Social media</p>
 
-          <ul class="social-links-footer">
-            <li class="container-social">
+          <ul class="list-social-links-footer">
+            <li class="item-social-links-footer">
               <a class="link-for-social-links-footer" href="https://www.instagram.com/" target="_blank">
-                <svg class="svg-icon" width="24" height="24">
+                <svg class="svg-icon-footer" width="24" height="24">
                   <use href="./images/icons.svg#instagram-foot" />
                 </svg>
               </a>
             </li>
-            <li class="container-social">
+            <li class="item-social-links-footer">
               <a class="link-for-social-links-footer" href="https://www.twitter.com/" target="_blank">
-                <svg class="svg-icon" width="24" height="24">
+                <svg class="svg-icon-footer" width="24" height="24">
                   <use href="./images/icons.svg#twitter-foot" />
                 </svg>
               </a>
             </li>
-            <li class="container-social">
+            <li class="item-social-links-footer">
               <a class="link-for-social-links-footer" href="https://www.facebook.com/" target="_blank">
-                <svg class="svg-icon" width="24" height="24">
+                <svg class="svg-icon-footer" width="24" height="24">
                   <use href="./images/icons.svg#facebook-foot" />
                 </svg>
               </a>
             </li>
-            <li class="container-social">
+            <li class="item-social-links-footer">
               <a class="link-for-social-links-footer" href="https://www.linkedin.com/" target="_blank">
-                <svg class="svg-icon" width="24" height="24">
+                <svg class="svg-icon-footer" width="24" height="24">
                   <use href="./images/icons.svg#linkedin-foot" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        
+        <div class="footer-subscribe">
+          <p class="footer-header-subscribe">Subscribe</p>
+          <form class="footer-send-email">
+            <label class="footer-input-block">
+              <input class="footer-input-container" name="footer-email" type="email" placeholder="E-mail" />
+            </label>
+            <button class="footer-button" type="submit">
+              Subscribe
+              <svg class="footer-icon-svg" width="24" height="24">
+                <use href="./images/icons.svg#footeremail"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <!--===========-->
       </div>
     </footer>
+
+    <!--модальне-вікно-початок-->
+
+    <div class="modal-overlay" data-modal>
+      <div class="modal">
+        <button class="close-icon" type="button" data-modal-close>
+          <svg class="close-icon-svg" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <!--форма-введення-даних-->
+        <form class="modal-form" name="feedback" autocomplete="off">
+          <!--перший-дочірній-елемент-форми-введення-даних-->
+          <div class="modal-form-inputs">
+            <label class="label-form" for="user-name">Name</label>
+            <div class="input-wrapper">
+              <input class="input-container" name="user-name" id="user-name" type="text" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <!--другий-дочірній-елемент-форми-введення-даних-->
+          <div class="modal-form-inputs">
+            <label class="label-form" for="phone">Phone</label>
+            <div class="input-wrapper">
+              <input class="input-container" name="phone" id="phone" type="tel" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <!--третій-дочірній-елемент-форми-введення-даних-->
+          <div class="modal-form-inputs">
+            <label class="label-form" for="email">Email</label>
+            <div class="input-wrapper">
+              <input class="input-container" name="email" id="email" type="email" />
+              <svg class="modal-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <!--четвертий-дочірній-елемент-форми-введення-даних-->
+          <div class="modal-form-inputs-comment">
+            <label class="label-form" for="user-comment">Comment</label>
+            <textarea class="modal-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+          </div>
+          <!--п'ятий-дочірній-елемент-форми-введення-даних-->
+          <div class="checkbox-field">
+            <input class="defolt-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
+            <label class="label-checkbox" for="user-privacy">
+              <span class="custom-checkbox">
+                <svg class="custom-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
